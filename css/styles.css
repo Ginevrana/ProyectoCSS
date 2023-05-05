@@ -36,24 +36,62 @@ ul {
     text-decoration: none;
 }
 
-
 /* Diseño navbar */
 .navbar {
-    background-color: rgba(41,49,51,0.9);  
+    background-color: #1B1B1B; 
     width: 100vw;
 }
 
 .links {
     display: block;
     padding: 1% 1%;
-    position: relative;
+    position: absolute;
+    color: aliceblue;
+    align-self: center;
+}
+
+.seleccionado {
     color: aliceblue;
     font-weight: bolder;
-    font-size: larger;
 }
+
+.cta {
+    color:olivedrab;
+}
+
+.links .fa-bars, .links .fa-times, .links input[type="checkbox"] {
+    display: none;
+}
+
+.links input[type="checkbox"], .links .fa-bars, .links .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.links .fa-bars, .links .fa-times {
+    font-size: 1.5rem;
+    pointer-events: none;
+  }
 
 .links input[type="checkbox"] {
     opacity: 0;
+}
+
+.links {
+    position: relative;
+}
+
+.links ul {
+    display: none;   
+}
+
+.links li {
+    margin: 0;
+    padding: 10px;
+}
+
+.links input:checked ~ ul {
+    display: block;   
 }
 
 .links input:checked ~ nav {
@@ -80,6 +118,7 @@ ul {
     .navbar img {
         max-width: 30vw;
     }
+
 
 }
 
