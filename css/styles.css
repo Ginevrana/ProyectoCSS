@@ -1,20 +1,14 @@
+/* Características generales */
 * {
     font-family: 'Quicksand', sans-serif;
     margin:0;
-    box-sizing: content-box;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section {
+    box-sizing: border-box;
     width: 100vw;
 }
 
 a {
     text-decoration: none;
-    padding: 1% 1%;
 }
-
 
 a:link {
     color: #aaa;
@@ -39,8 +33,64 @@ a:active {
 
 ul {
     list-style: none;
+    text-decoration: none;
 }
 
+
+/* Diseño navbar */
 .navbar {
-    background-color: rgba(41,49,51,1);
+    background-color: rgba(41,49,51,0.9);  
+    width: 100vw;
+}
+
+.links {
+    display: block;
+    padding: 1% 1%;
+    position: relative;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.links input[type="checkbox"] {
+    opacity: 0;
+}
+
+.links input:checked ~ nav {
+    display: block;
+}
+  
+.links input:checked ~ .fa-bars {
+    display: none;
+}
+
+.links input:not(:checked) ~ .fa-times {
+    display: none;
+}
+
+
+
+/* VERSIÓN CELULAR */
+@media (max-width:480px){
+    
+    .navbar h2 {
+        display: none;
+    }
+    
+    .navbar img {
+        max-width: 30vw;
+    }
+
+}
+
+
+/* VERSIÓN TABLET */
+@media (max-width:770px){
+
+}
+
+
+/* VERSIÓN ESCRITORIO */
+@media (min-width:771px){
+
 }
