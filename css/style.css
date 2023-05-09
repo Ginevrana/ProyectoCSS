@@ -19,7 +19,7 @@ ul {
 }
 
 header { 
-    background-color: #293133;
+    background-color:  #2e2e2e;
     color: aliceblue;
     padding: 4%;
     box-sizing: border-box;
@@ -73,87 +73,129 @@ a {
     font-size: 2.5rem;
     pointer-events: none;
     padding: 6%;
-  }
+}
   
-  .menu input[type="checkbox"] {
-    opacity: 0;
-  }
-  
-  .menu {
-    color: white;
-    position: relative;
-  }
-  
-  .menu .links {
-    display: none;
-  }
-  
-  .menu input:checked ~ .links {
-    display: block;
-  }
-  
-  .menu input:checked ~ .fa-bars {
-    display: none;
-  }
-  
-  .menu input:not(:checked) ~ .fa-times {
-    display: none;
-  }
+.menu input[type="checkbox"] {
+  opacity: 0;
+}
 
-  .links .seleccionado {
-    font-weight: bolder;
-    color: aliceblue;
-  }
+.menu {
+  color: white;
+  position: relative;
+}
 
-  .links .cta {
-    font-weight: bolder;
-    color: olivedrab;
-  }
+.menu .links {
+  display: none;
+}
+  
+.menu input:checked ~ .links {
+  display: block;
+}
+  
+.menu input:checked ~ .fa-bars {
+  display: none;
+}
 
-  .card {
-    text-align: center;
-    padding: 8% 0;
-    color: aliceblue;
-    background-color: #293133;
-  }
+.menu input:not(:checked) ~ .fa-times {
+  display: none;
+}
 
-  h1, h2, h5, h3, p {
-    text-align: center;
-    margin: auto;
-    width: 85%;
-  }
+.links .seleccionado {
+  font-weight: bolder;
+  color: aliceblue;
+}
 
-  button {
-    padding: 2%;
-    margin:3% auto;
-    width: 40%;
+.links .cta {
+  font-weight: bolder;
+  color: olivedrab;
+}
+
+.sec1 {
+    background-color: #2e2e2e;
+    margin-bottom: 5%;
+}
+
+.oradores {
+    margin-bottom: 5%;
+}
+
+.card {
+  text-align: center;
+  padding: 8% 0;
+  color: aliceblue;
+}
+
+h1, h2, h5, h3, p {
+  text-align: center;
+  margin: auto;
+  width: 85%;
+}
+
+/* Diseño botones */
+button {
+  padding: 2%;
+  margin:3% auto;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.traslucido {
+  color:aliceblue;
+  border: 2px solid aliceblue;
+  background-color: rgba(0,0,0,0);
+}
+
+.traslucido:hover {
+  background-color: white;
+  color:  #2e2e2e;
+  border: 2px solid white;
+  transition: 0.5s;
+  box-shadow: 0px 0px 6px #aaa;
+}
+
+.verde {
+  background-color: rgb(101, 151, 0);
+  color: aliceblue;
+  border: 2px solid rgb(101, 151, 0);
+}
+
+.verde:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 6px #aaa;
+}
+
+/* Sección oradores */
+.oradores img {
+    padding: 7%;
+    width: 100%;
+}
+
+.tags {
+    padding:0 0 1% 7%;
+}
+
+h6 {
+    padding: 1%;
     border-radius: 5px;
-  }
+    display: inline;
+    font-weight: 900;
+}
 
-  .traslucido {
-    color:aliceblue;
-    border: 2px solid aliceblue;
-    background-color: rgba(0,0,0,0);
-  }
+.js {
+    background-color: rgb(253, 176, 32);
+}
 
-  .traslucido:hover {
-    background-color: white;
-    color: #293133;
-    border: 2px solid #252525;
-    transition: 0.5s;
-  }
+.react {
+    background-color: rgb(0, 149, 207);
+    color: white;
+}
 
-  .verde {
-    background-color: olivedrab;
-    color: aliceblue;
-    border: 2px solid olivedrab;
-  }
+.gris {
+    background-color: rgb(75, 75, 75);
+    color:white
+}
 
-  .verde:hover {
-    background-color: rgb(162, 226, 33);
-    color: #293133;
-    font-weight: bolder;
-    border: 2px solid rgb(162, 226, 33);
-    transition: 0.5s;
-  }
-
+.rojo {
+    background-color: rgb(185, 0, 0);
+    color: white;
+}
