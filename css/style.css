@@ -303,8 +303,31 @@ footer ul a li{
         margin: 3% -17% 0 17%;
     }
 
+
+    /* Estilado sección oradores */
     .desertores {
         display: inline-flex;
+    }
+
+    /* Estilado sección Honolulu */
+    .honolulu {
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .honolulu img {
+        max-width: 50%;
+    }
+
+    .honolulu aside h2, .honolulu aside p, .honolulu aside button{
+        margin: 3% 0 0 2%;
+        text-align: initial;
+    }
+
+    #hono-button {
+        margin: 3% 0 0 2% !important;
+        width: fit-content !important;
     }
 
 }
