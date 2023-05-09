@@ -3,7 +3,7 @@
     font-family: 'Quicksand', sans-serif;
     margin:0;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
 }
 
 body {
@@ -302,6 +302,11 @@ footer ul a li{
         width: fit-content;
         margin: 3% -17% 0 17%;
     }
+
+    .desertores {
+        display: inline-flex;
+    }
+
 }
 
 
