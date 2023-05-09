@@ -228,16 +228,16 @@ footer ul a li{
 
 
 @media (min-width:1023px) {
+    /* Estilado header */
     header {
         padding: 1%;
-        box-sizing: border-box;
     }
 
     nav {
         display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
-        justify-content: space-evenly;
-        max-width: 1440px;
     }
 
     .logo {
@@ -253,25 +253,69 @@ footer ul a li{
         margin: auto 0;
     }
 
-    .menu {
-        right: -17%;
-    }
-
     .menu input[type="checkbox"], .menu .fa-bars, .menu .fa-times{
         display: none;
     }
 
+    .menu {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
     .menu .links {
         text-align: start;
-        width: 50%;
+        max-width: max-content;
         display: inline-flex;
-        margin: 0;
+        align-items: center;
     }
-    
+
     .menu .links li {
-        width: fit-content;
-        padding: auto;
-        padding: 0 10px;
         font-size: small;
+        width: max-content;
+        padding: 0 10px;
+    }
+
+    .menu .links .long {
+        width: fit-content;
+    }
+
+    /* Estilado primera sección */
+    .leyenda img{
+        position: relative;
+        filter: brightness(0.3);
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .leyenda .card {
+        position: absolute;
+        top: 15%;
+        width: 50%;
+        right: 5%;
+    }
+
+    .leyenda p, .leyenda h1 {
+        text-align: end;
+    }
+
+    .leyenda button {
+        width: fit-content;
+        margin: 3% -17% 0 17%;
     }
 }
+
+
+@media (min-width: 1243px) {
+/* Corrección de navbar */
+    .menu {
+        right: -5%;
+    }
+
+    .menu .links li {
+        padding: 0 1.3rem;
+    }
+
+    .leyenda button {
+        margin: 3% -23% 0 23%;
+    }
+}    
