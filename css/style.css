@@ -330,6 +330,18 @@ footer ul a li{
         width: fit-content !important;
     }
 
+    /* Estilado seccion form */
+    .form input {
+        display: inline;
+        width: 49%;    
+    }
+
+    .form .enviar {
+        width: 100%;
+        margin: 0 !important;
+        font-size: larger;
+    }
+
 }
 
 
