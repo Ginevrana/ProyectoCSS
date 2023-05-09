@@ -6,6 +6,7 @@
     width: 100vw;
 }
 
+/* Enlaces */
 a {
     text-decoration: none;
 }
@@ -18,10 +19,6 @@ a:visited {
     color: #aaa;
 }
 
-a:focus {
-    border-bottom: 1px solid;
-}
-
 a:hover {
     transform: scale(1.1);
     transition: 0.5s;
@@ -31,95 +28,77 @@ a:active {
     color:aliceblue;
 }
 
+/* Estilo listados */
 ul {
     list-style: none;
-    text-decoration: none;
 }
 
-/* Diseño navbar */
-.navbar {
-    background-color: #1B1B1B; 
-    width: 100vw;
+li {
+    max-width: 56%;
 }
 
-.links {
-    display: block;
-    padding: 1% 1%;
-    position: absolute;
+/* Navbar */
+nav {
+    background-color: #293133;
     color: aliceblue;
-    align-self: center;
-}
-
-.seleccionado {
-    color: aliceblue;
-    font-weight: bolder;
-}
-
-.cta {
-    color:olivedrab;
-}
-
-.links .fa-bars, .links .fa-times, .links input[type="checkbox"] {
-    display: none;
-}
-
-.links input[type="checkbox"], .links .fa-bars, .links .fa-times {
-    position: absolute;
-    box-sizing: border-box;
-}
-
-.links .fa-bars, .links .fa-times {
-    font-size: 1.5rem;
-    pointer-events: none;
-  }
-
-.links input[type="checkbox"] {
-    opacity: 0;
-}
-
-.links {
     position: relative;
 }
 
-.links ul {
-    display: none;   
+.logo img {
+    width: 30%;
 }
 
-.links li {
-    margin: 0;
-    padding: 10px;
+.menu input[type="checkbox"]{
+    opacity: 0;
 }
 
-.links input:checked ~ ul {
-    display: block;   
+.seleccionado {
+    font-weight: bolder;
+    color: aliceblue;
 }
 
-.links input:checked ~ nav {
-    display: block;
+.cta {
+    font-weight: bolder;
+    color: olivedrab;
 }
-  
-.links input:checked ~ .fa-bars {
-    display: none;
-}
-
-.links input:not(:checked) ~ .fa-times {
-    display: none;
-}
-
-
 
 /* VERSIÓN CELULAR */
 @media (max-width:480px){
-    
-    .navbar h2 {
+    h2 {
         display: none;
     }
-    
-    .navbar img {
-        max-width: 30vw;
+
+    .links a{
+        display: block;
+        padding: 1%;
+        max-width: 100%;
     }
 
+    .menu input[type="checkbox"], .links .fa-bars, .links .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+    }
 
+    .menu .fa-bars, .menu .fa-times {
+        font-size: 1.3rem;
+        pointer-events: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .menu input:checked ~ nav {
+        display: block;
+    }
+
+    .menu input:checked ~ .fa-bars {
+        display: none;
+    }
+
+    .menu input:not(:checked) ~ .fa-times {
+        display: none;
+    }
 }
 
 
