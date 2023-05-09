@@ -6,6 +6,10 @@
     width: 100vw;
 }
 
+body {
+    box-sizing: border-box;
+}
+
 ul {
     list-style:none;
     width: 50%;
@@ -94,4 +98,31 @@ a {
   
   .menu input:not(:checked) ~ .fa-times {
     display: none;
+  }
+
+  .links .seleccionado {
+    font-weight: bolder;
+    color: aliceblue;
+  }
+
+  .links .cta {
+    font-weight: bolder;
+    color: olivedrab;
+  }
+
+  .card {
+    text-align: center;
+    padding: 8% 0;
+  }
+
+  h1, h2, h5, h3, p {
+    text-align: center;
+    margin: auto;
+    width: 85%;
+  }
+
+  button {
+    padding: 1%;
+    margin:3% auto;
+    width: 40%;
   }
