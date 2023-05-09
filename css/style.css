@@ -125,7 +125,7 @@ a {
   color: aliceblue;
 }
 
-h1, h2, h5, h3, p {
+h1, h2, h5, h4, h3, p {
   text-align: center;
   margin: auto;
   width: 85%;
@@ -205,7 +205,19 @@ h6 {
 }
 
 /* Sección form */
+h4 {
+    margin-top: 3%;
+}
 
+form {
+    padding:0 7%
+}
+
+#nombre, #apellido, textarea {
+    max-width: 100%;
+    padding: 2%;
+    margin: 2% 0;
+}
 
 
 /* Estilado footer mobile */
