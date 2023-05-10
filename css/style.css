@@ -342,6 +342,14 @@ footer .footer ul {
         font-size: larger;
     }
 
+    /* Estilado links footer */
+    .footer ul{
+        display: inline-flex !important;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        padding: 3% 0;
+    }
 
 }
 
