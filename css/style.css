@@ -12,7 +12,7 @@ body {
 
 ul {
     list-style:none;
-    width: 50%;
+    width: 100%;
     padding:0;
     margin:0;
     text-align: right;
@@ -219,13 +219,12 @@ form {
     margin: 2% 0;
 }
 
-
 /* Estilado footer mobile */
-footer ul a li{
-    max-width: 100vw;
+footer .footer ul { 
+    width: 100% !important;
     text-align: center;
-}
 
+}
 
 @media (min-width:1023px) {
     /* Estilado header */
@@ -305,7 +304,7 @@ footer ul a li{
 
 
     /* Estilado sección oradores */
-    .desertores {
+    .disertantes {
         display: inline-flex;
     }
 
@@ -338,9 +337,10 @@ footer ul a li{
 
     .form .enviar {
         width: 100%;
-        margin: 0 !important;
+        margin: 2% 0 !important;
         font-size: larger;
     }
+
 
 }
 
