@@ -90,6 +90,7 @@ a {
   
 .menu input:checked ~ .links {
   display: block;
+  margin-left: 73%;
 }
   
 .menu input:checked ~ .fa-bars {
